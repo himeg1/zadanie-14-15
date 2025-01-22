@@ -1,0 +1,138 @@
+  <A HREF="index1542.html"> wróć </A>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Opinii o Szkole</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #2E8B57;
+        }
+        h1 {
+            text-align: center;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+        .form-section {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+        .right-section {
+            align-self: flex-start;
+            margin-left: auto;
+        }
+        .submit-buttons {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularz Opinii o Szkole</h1>
+
+    <form action="mailto:mkryniew@ids.gda.pl" method="post" enctype="text/plain">
+        <div class="form-section">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="imie" name="imie"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="Wymagany"> <br> <br>
+
+            <label for="opinia">Twoja opinia o szkole:</label><br>
+            <textarea id="opinia" name="opinia" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="form-section">
+            <p>Ocena nauczycieli:</p>
+            <input type="radio" id="bdb" name="nauczyciele" value="bdb" checked>
+            <label for="bdb">Bardzo dobra</label>
+            <input type="radio" id="db" name="nauczyciele" value="db">
+            <label for="db">Dobra</label>
+            <input type="radio" id="przecietna" name="nauczyciele" value="przecietna">
+            <label for="przecietna">Przeciętna</label>
+            <input type="radio" id="slaba" name="nauczyciele" value="slaba">
+            <label for="slaba">Słaba</label><br><br>
+
+            <p>Ocena zajęć dodatkowych:</p>
+            <input type="radio" id="bdb1" name="zd" value="bdb1">
+            <label for="bdb1">Bardzo dobre</label><br>
+            <input type="radio" id="stsf" name="zd" value="stsf">
+            <label for="stsf">Satysfakcjonujące</label><br>
+            <input type="radio" id="slabe" name="zd" value="slabe">
+            <label for="slabe">Słabe</label> <br> <br>
+        </div>
+
+        <div class="form-section">
+            <p>Najważniejsze cechy szkoły (można więcej niż 1):</p>
+            <input type="checkbox" id="dyscyplina" name="cechy" value="dyscyplina">
+            <label for="dyscyplina">Dyscyplina</label> <br>
+            <input type="checkbox" id="nowoczenosc" name="features" value="nowoczenosc">
+            <label for="nowoczenosc">Nowoczesność</label><br>
+            <input type="checkbox" id="atmosfera" name="cechy" value="atmosfera">
+            <label for="atmosfera">Przyjazna atmosfera</label><br>
+            <input type="checkbox" id="wyniki" name="cechy" value="wyniki">
+            <label for="wyniki">Wyniki nauczania</label> <br> <br>
+
+            <label for="goals">opinia dotycząca nauczycieli(max 100 znaków):</label> 
+           <p> <textarea id="name" name="name" rows="4" cols="50" maxlength="100"></textarea> <p>
+            
+            <label for="haslo">Hasło:</label>
+            <input type="password" id="haslo1" name="haslo2"><br><br>
+        </div>
+
+        <div class="form-section right-section">
+            <p>Ocena infrastruktury:</p>
+            <input type="radio" id="infra1" name="infrastructure" value="5">
+            <label for="infra1">5</label>
+            <input type="radio" id="infra2" name="infrastructure" value="4">
+            <label for="infra2">4</label>
+            <input type="radio" id="infra3" name="infrastructure" value="3" checked>
+            <label for="infra3">3</label>
+            <input type="radio" id="infra4" name="infrastructure" value="2">
+            <label for="infra4">2</label>
+            <input type="radio" id="infra5" name="infrastructure" value="1">
+            <label for="infra5">1</label><br><br> 
+
+            <label for="program">Program nauczania:</label>
+            <select id="program" name="program">
+                <option value="podstawowy" selected>Podstawowy</option>
+                <option value="rozszerzony">Rozszerzony</option>
+                <option value="indywidualny">Indywidualny</option>
+                <option value="zintegrowany">Zintegrowany</option>
+                <option value="miedzynarodowy">Międzynarodowy</option>
+            </select><br><br>
+
+            <label for="rok">Rok nauki:</label>
+            <select id="rok" name="rok">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+
+            <label for="ocenka">Ogólna ocena szkoły:</label>
+            <select id="ocenka" name="ocenka1">
+                <option value="bdb1">Bardzo dobra</option>
+                <option value="dobra1">Dobra</option>
+                <option value="przecietna1" selected>Przeciętna</option>
+            </select><br><br>
+        </div>
+
+         <div class="submit-buttons">
+            <input type="reset" value="Czyść">
+            <input type="submit" value="Wyślij">
+        </div>
+    </form>
+</body>
+</html>
+
